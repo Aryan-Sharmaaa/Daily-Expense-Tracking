@@ -26,7 +26,7 @@ function Budget({totalExpense, budgetAmount, saveBudget, currentMonth}) {
         { name: 'Balace', value:  balance}
     ];
 
-    const COLORS2 = ["#ff6464", "#53d37d"];
+    const COLORS2 = ["#E07A5F", "#3F8F86"];
 
     return (
         <>
@@ -47,7 +47,7 @@ function Budget({totalExpense, budgetAmount, saveBudget, currentMonth}) {
                             endAngle={0}
                             innerRadius={80}
                             outerRadius={110}
-                            fill="#8884d8"
+                            fill="#3F8F86"
                             paddingAngle={0}
                             dataKey="value"
                             label

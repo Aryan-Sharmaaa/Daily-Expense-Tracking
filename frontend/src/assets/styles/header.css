@@ -43,7 +43,7 @@
     color: var(--second);
 }
 .profile div p:last-of-type {
-    color: gray;
+    color: var(--muted);
     font-size: 12px;
 }
 @media all and (max-width: 768px) {
@@ -58,6 +58,6 @@
         left: 0;
         width: 100%;
         justify-content: left;
-        background-color: aqua;
+        background-color: var(--third);
     }
 }

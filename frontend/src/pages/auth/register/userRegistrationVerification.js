@@ -64,7 +64,7 @@ const UserRegistrationVerfication = () => {
                     isSending ? 
                         <div className='msg'>Sending email to {email}...</div> 
                         : (response_error==="") 
-                        ? <div className='msg'>The verification code has been sent to <span style={{fontWeight:600,  color:'green'}}>{email}</span>.</div>
+                        ? <div className='msg'>The verification code has been sent to <span style={{fontWeight:600,  color:'var(--success)'}}>{email}</span>.</div>
                         : <></>
                 }
                 {

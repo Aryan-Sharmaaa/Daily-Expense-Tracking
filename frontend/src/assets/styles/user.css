@@ -36,7 +36,7 @@
     box-shadow: none;
 }
 .t-form small {
-    color: rgb(255, 0, 0);font-size: 13px;
+    color: var(--danger);font-size: 13px;
 }
 .utils {
     width: 100%;
@@ -145,18 +145,18 @@ table .expense, table .income {
     height: 22px;
     width: 22px;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--danger);
     margin-right: 10px;
     display: inline-block;
 }
 table .income {
-    background-color: green;
+    background-color: var(--success);
 }
 table i:hover{
     color: var(--main);
 }
 table i:active {
-    color: white;
+    color: var(--accent);
 }
 table tr:not(:first-of-type)  i {
     visibility: hidden;
@@ -181,12 +181,12 @@ table td button{
     display: flex;
 }
 .user-panel .msg-wrapper.success {
-    background-color: rgb(227, 255, 232);
-    color: green;
+    background-color: var(--success-tint);
+    color: var(--success);
 }
 .user-panel .msg-wrapper.fail {
-    background-color: rgb(255, 227, 227);
-    color: rgb(176, 0, 0);
+    background-color: var(--accent-tint);
+    color: var(--danger);
 }
 
 .user-panel .msg-wrapper .msg p {
@@ -207,8 +207,8 @@ table td button{
     color: var(--second);
 }
 .delete {
-    background-color: red;
-    border: 2px solid red;
+    background-color: var(--danger);
+    border: 2px solid var(--danger);
     border-radius: 5px;
 }
 .profile-img {
@@ -284,10 +284,10 @@ form select {
     margin-top: 15px;
 }
 .st-list .due.overdue {
-    color: rgb(255, 87, 87);
+    color: var(--danger);
 }
 .st-list .due.today {
-    color: rgb(252, 217, 129);
+    color: var(--sand-deep);
 }
 .st-list i {
     margin-left: 10px;

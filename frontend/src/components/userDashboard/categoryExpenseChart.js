@@ -2,7 +2,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recha
 
 
 function CategoryExpenseChart({ categorySummary }) {
-    const COLORS = ["#ff6e6e", "#ffb26e", "#e6cd10", "#00a33c", "#6ea1ff", "#a36eff", "#ff6eff", "#6ee0ff", "#676d6e"];
+    const COLORS = ["#E07A5F", "#2F8079", "#D9B26A", "#8CC2B8", "#C05A41", "#A68A5B", "#1F5F59", "#F2B5A1", "#B8A98A"];
 
     return (
         <div className='chart'>
@@ -14,7 +14,7 @@ function CategoryExpenseChart({ categorySummary }) {
                         cy={135}
                         innerRadius={80}
                         outerRadius={110}
-                        fill="#8884d8"
+                        fill="#3F8F86"
                         paddingAngle={0}
                         dataKey="amount"
                         label

@@ -4,7 +4,7 @@ const Loading = () => {
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center',  flexDirection: 'column', color: 'var(--second)'}}>
             <FadeLoader
-                color="#4389df"
+                color="#2F8079"
                 loading={true}
                 size={40}
                 aria-label="Loading Spinner"

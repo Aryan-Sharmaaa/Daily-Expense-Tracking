@@ -76,7 +76,7 @@ function CategoriesTableBody({ data, disableOrEnable }) {
 
                     <td>{item.transactionType.transactionTypeName}</td>
                     {
-                        item.enabled ? <td style={{ color: '#6aa412' }}>Enabled</td> : <td style={{ color: '#ff0000' }}>Disabled</td>
+                        item.enabled ? <td style={{ color: 'var(--success)' }}>Enabled</td> : <td style={{ color: 'var(--danger)' }}>Disabled</td>
                     }
 
                     <td style={{ display: 'flex', gap: '5px' }}>
@@ -89,14 +89,14 @@ function CategoriesTableBody({ data, disableOrEnable }) {
                             (item.enabled) ?
                                 (<button
                                     onClick={() => disableOrEnable(item.categoryId)}
-                                    style={{ backgroundColor: '#ff0000' }}
+                                    style={{ backgroundColor: 'var(--danger)' }}
                                 >
                                     Disable
                                 </button>)
                                 :
                                 (<button
                                     onClick={() => disableOrEnable(item.categoryId)}
-                                    style={{ backgroundColor: '#6aa412' }}
+                                    style={{ backgroundColor: 'var(--success)' }}
                                 >
                                     Enable
                                 </button>)

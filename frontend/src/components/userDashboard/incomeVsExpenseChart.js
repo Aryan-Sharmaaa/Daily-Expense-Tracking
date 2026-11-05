@@ -21,8 +21,8 @@ function IncomeVsExpenseChart({ data }) {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="totalExpense" name='Expense' stroke="#ff0000" activeDot={{ r: 5 }} />
-                <Line type="monotone" dataKey="totalIncome" name='Income' stroke="#6aa412" />
+                <Line type="monotone" dataKey="totalExpense" name='Expense' stroke="#C4553A" activeDot={{ r: 5 }} />
+                <Line type="monotone" dataKey="totalIncome" name='Income' stroke="#2F8079" />
             </LineChart>
 
         </ResponsiveContainer>

@@ -12,7 +12,7 @@ function RegistrationSuccess() {
         <div className='container'>
             <div className="auth-form">
                 <img src={success} size='20px'/>
-                <h4 style={{textAlign:"center", color: "green"}}>Congratulations, You account has been successfully created!</h4>
+                <h4 style={{textAlign:"center", color: "var(--success)"}}>Congratulations, You account has been successfully created!</h4>
                 <br/>
                 <Link to='/auth/login'><button className="button button-fill" style={{padding: '7px 25px'}}>Login now</button></Link>
             </div>

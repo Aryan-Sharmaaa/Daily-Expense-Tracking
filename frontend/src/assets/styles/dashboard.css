@@ -15,23 +15,25 @@
     display: flex; align-items: center;
     justify-content: space-between;
     gap: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px var(--text);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px var(--shadow);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 .details > div:hover {
-    opacity: 0.95;
+    box-shadow: 0 6px 16px var(--shadow);
+    transform: translateY(-1px);
 }
 .details > div:nth-of-type(1) {
-    background-color: #53d37d;
+    background-color: var(--card-income);
 }
 .details > div:nth-of-type(2) {
-    background-color: #ff6464;
+    background-color: var(--card-expense);
 }
 .details > div:nth-of-type(3) {
-    background-color: #5e85e6;
+    background-color: var(--card-cash);
 }
 .details > div:nth-of-type(4) {
-    background-color: #fe50c4;
+    background-color: var(--card-txn);
 }
 .details > div div {
     display: flex;
@@ -49,7 +51,6 @@
 }
 .dashboard-chart {
     width: 100%;
-    border: '1px solid grey';
     height: 350px;
     display: flex;
     align-items: center;
@@ -63,7 +64,9 @@
     width: 50%;
     height: 100%;
     padding: 15px;
-    box-shadow: 0 0 5px var(--main);
+    background-color: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px var(--shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +93,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--overlay);
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -105,7 +108,7 @@
 }
 .budget-form form {
     padding: 15px;
-    background-color: white;
+    background-color: var(--surface);
 }
 
 select {
@@ -119,7 +122,7 @@ select {
 @media all and (max-width:1000px) {
     .charts {
         display: flex;  
-        color: #00a33c;
+        color: var(--success);
     }
 }
 

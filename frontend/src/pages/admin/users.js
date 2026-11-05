@@ -108,7 +108,7 @@ function UsersTableBody({ data, disableOrEnable }) {
                     <td>Rs. {item.income || 0.0}</td>
                     <td>{item.noOfTransactions || 0}</td>
                     {
-                        item.enabled ? <td style={{ color: '#6aa412' }}>Enabled</td> : <td style={{ color: '#ff0000' }}>Disabled</td>
+                        item.enabled ? <td style={{ color: 'var(--success)' }}>Enabled</td> : <td style={{ color: 'var(--danger)' }}>Disabled</td>
                     }
 
                     <td>
@@ -116,12 +116,12 @@ function UsersTableBody({ data, disableOrEnable }) {
                             (item.enabled) ?
                                 <button
                                     onClick={() => disableOrEnable(item.id)}
-                                    style={{ backgroundColor: '#ff0000' }}
+                                    style={{ backgroundColor: 'var(--danger)' }}
                                 >Disable
                                 </button> :
                                 <button
                                     onClick={() => disableOrEnable(item.id)}
-                                    style={{ backgroundColor: '#6aa412' }}
+                                    style={{ backgroundColor: 'var(--success)' }}
                                 >Enable
                                 </button>
                         }

@@ -36,7 +36,7 @@
     color: var(--text);font-size: 14px;
 }
 .t-row-left p:last-of-type{
-    color: grey;
+    color: var(--muted);
     font-size: 13px;
 }
 .t-row-right {
